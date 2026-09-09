@@ -40,7 +40,7 @@ form2.addEventListener("submit", (e) => {
 
 const fun = async (loc) => {
   try {
-    const res = await fetch("http://localhost:3000/weather?location=" + loc);
+    const res = await fetch(`/weather?location=${loc}`);
     const data = await res.json();
     console.log(data);
     console.log(data.error);
