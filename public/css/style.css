@@ -35,12 +35,16 @@ button {
 #div2 {
   display: none;
 }
+
 input,
 button {
   padding: 15px 5px;
   border-radius: 10px;
   border: 1px solid #c9e6f7   ;
   outline: none;
+}
+input{
+  padding-left: 10px;
 }
 
 #span1 {
