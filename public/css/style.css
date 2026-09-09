@@ -1,20 +1,130 @@
-p{
+button {
+  cursor: pointer;
+
+}
+#div1,#div2{
+  box-shadow: 0 10px 30px rgba(33, 150, 211, 0.15);
+
+}
+
+#div1,
+#div2 {
+  width: 400px;
+  text-align: center;
+  border: 1px solid #c9e6f7   ;
+  position: absolute;
+  top: 50%;
+  border-radius: 20px;
+  padding: 30px 30px;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff   ;
+}
+#location {
+  margin-bottom: 20px;
+}
+
+#header {
+  margin-bottom: 30px;
+}
+#header span {
   font-size: 24px;
   font-weight: bold;
-  color: green;
 }
-input,button{
-  padding:10px;
-  color:red
-  
+#div2 {
+  display: none;
 }
-button{
-  cursor:pointer
+input,
+button {
+  padding: 15px 5px;
+  border-radius: 10px;
+  border: 1px solid #c9e6f7   ;
+  outline: none;
 }
+
+#span1 {
+  display: none;
+}
+#load {
+  display: none;
+  margin-left: 5px;
+  padding: 15px 15px;
+  color: white !important;
+}
+#load i{
+  color: #fff !important;
+}
+#d1,
+#d2,
+#d3,
+#d4 {
+  display: none;
+  border: 1px solid #c9e6f7   ;
+  padding: 20px 10px;
+  text-align: left;
+  border-radius: 10px;
+
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
 body{
-  text-align: center;
+  background-color: #eaf6ff;
+
+  font-family: "Roboto", sans-serif;
+
+}
+.fa-cloud-sun {
+  color: #f5b942;
+  font-size: 24px;
+}
+
+#span1 {
+  color: #e74c3c;
+}
+button {
+  background-color: #2196d3;
+  color: #fff !important;
+  font-size: 17px;
+  letter-spacing: 1px;
+  border: none;
+  padding: 15px 20px;
+}
+button:hover{
+  background-color:#147db5    ;
   
 }
-h2{
-  color: red;
+input,#d1,#d2,#d3,#d4{
+  background-color:  #f5fbff   ;
+}
+input{
+  border:1px solid #9dd5f2   ;
+  color: #174a63   ;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+i{
+  color: #2196d3   ;
+}
+span{
+  color: #28566b   ;
+}
+
+
+#d1,#d2,#d3,#d4 {
+  transition: 0.3s ease;
+}
+
+#d1:hover,
+#d2:hover,
+#d3:hover,
+#d4:hover {
+  background-color: #dff3ff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(33, 150, 211, 0.2);
 }

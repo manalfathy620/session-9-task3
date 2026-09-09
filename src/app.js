@@ -24,8 +24,10 @@ app.get("/weather", (req, res) => {
       }
 
       res.send({
-        location: JSON.stringify({ location: req.query.location }),
-        forcast: JSON.stringify(data),
+        country: req.query.location ,
+        latitude: JSON.stringify(data.lat),
+        longitude:data.long,
+        tempreture:data.temp
       });
     });
   });
@@ -34,3 +36,5 @@ app.get("/weather", (req, res) => {
 app.listen(port, () => {
   console.log("listen to Requests from port " + port);
 });
+
+module.exports = app;

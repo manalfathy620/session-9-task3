@@ -13,7 +13,7 @@ request({url:url,json:true},(error,res)=>{
   }
   else if(res.body.features.length == 0)
   {
-    callback({error:"unenable to find location in mabBox"},undefined)
+    callback({error:"Unenable to find location"},undefined)
   }
   else{
     callback(undefined,{
