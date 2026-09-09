@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -6,7 +8,6 @@ const port = process.env.PORT || 3000;
 const dir = path.join(__dirname, "../public");
 const geocode = require("../utlis/mabBox");
 const forcast = require("../utlis/weather");
-require("dotenv").config()
 
 app.use(express.static(dir));
 
@@ -33,8 +34,9 @@ app.get("/weather", (req, res) => {
   });
 });
 
+if (process.env.NODE_ENV !== "production") {
 app.listen(port, () => {
   console.log("listen to Requests from port " + port);
 });
-
+}
 module.exports = app;
