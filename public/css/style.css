@@ -65,7 +65,7 @@ input{
 #d4 {
   display: none;
   border: 1px solid #c9e6f7   ;
-  padding: 20px 10px;
+  padding: 30px 20px;
   text-align: left;
   border-radius: 10px;
 
@@ -98,9 +98,14 @@ button {
   letter-spacing: 1px;
   border: none;
   padding: 15px 20px;
+  box-shadow: 0 6px 15px rgba(33, 150, 211, 0.2);
 }
 button:hover{
   background-color:#147db5    ;
+  
+
+    box-shadow: 0 10px 25px rgba(33, 150, 211, 0.35);
+
   
 }
 input,#d1,#d2,#d3,#d4{
@@ -122,6 +127,7 @@ span{
 
 #d1,#d2,#d3,#d4 {
   transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(33, 150, 211, 0.12);
 }
 
 #d1:hover,
